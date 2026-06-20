@@ -31,6 +31,7 @@
         const sizeElement = document.getElementById('size');
 
         function updateSize() {
+            if (!sizeElement) return;
             sizeElement.textContent =
                 `w:${window.innerWidth}px, h:${window.innerHeight}px`;
         }
